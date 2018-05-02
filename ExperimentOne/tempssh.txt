@@ -1,0 +1,41 @@
+在terminal中输入：
+chkconfig --list |grep sshd
+若显示
+sshd 0:off 1:off 2:off 3:off 4:off 5:off 6:off 则表明未启用
+启动ssh服务
+/etc/init.d/sshd start
+或 设置ssh为开机自动启动
+chkconfig --level 35 sshd on（需要进入超级用户su -）
+
+
+
+同时打开三台虚拟机
+修改三台虚拟机的ssh配置文件
+vim /etc/ssh/sshd_config
+找到下列行 去掉注释符号#
+RSAAuthentication yes （允许RSA认证）
+PubkeyAuthentication yes   （允许公钥认证）
+AuthorizedKeysFile .ssh/authorized_keys  （公钥存放在.ssh/au..文件中）
+	   	  修改后需要重启ssh：
+/sbin/service sshd restart
+分别在三台虚拟机上生成密码对，运行下列命令
+ssh-keygen -t rsa  
+（可在默认路径~/.ssh/下生成私钥id_rsa公钥id_rsa.pub，用ls -a 可以查看.ssh目录）
+将所有虚拟机的公钥传送到一起，目的是生成一个authorized_keys文件，包含所有机器的公钥，不妨将公钥都发送到master上
+使用scp命令（用来实现局域网内不同linux系统间传送文件）
+scp id_rsa.pub root@master:/root/.ssh/ id_rsa.pub.slave1
+（在slave1上操作时，向master发送公钥，为了不与master的公钥重复，因此在最后加上.slave1作为标识，slave2同理，）
+scp便是利用ssh在linux主机间传送文件的命令，若出现Host key verification failed.参照问题汇总
+生成authorized_keys：
+此时在master的/root/.ssh/ 至少应该有id_rsa.pub.slave1 id_rsa.pub.slave2和id_rsa.pub三个文件
+cd ~/.ssh/
+cat id_rsa.pub >> authorized_keys 
+cat id_rsa.pub.slave1 >> authorized_keys
+cat id_rsa.pub.slave2 >> authorized_keys
+将三个公钥内容添加到同一文件authorized_keys中
+
+此时，拥有该文件的虚拟机可以被另两台虚拟机直接登录，实现了ssh无密码验证互通，将此文件发送给slave1和slave2的/root/.ssh后，使三台虚拟机用root用户可以直接都可相互登录。
+scp authorized_keys slave1:/root/.ssh/authorized_keys
+scp authorized_keys slave2:/root/.ssh/authorized_keys
+		  此时在master或slave2的terminal中输入ssh slave1，便可以登录slave1
+		  以此类推

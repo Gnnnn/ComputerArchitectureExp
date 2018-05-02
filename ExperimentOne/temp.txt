@@ -1,0 +1,66 @@
+C:\Users\Public\Documents\Shared Virtual Machines
+
+http://archive.kernel.org/centos-vault/6.5/isos/x86_64/
+
+密码passwordroot
+
+rootusername
+passwordroot
+
+
+安装tools：
+https://jingyan.baidu.com/article/cd4c2979361620756f6e606b.html
+
+
+
+vim /etc/sysconfig/network 
+内容改为
+删去了
+ETWORKING_IPV6=no
+
+
+
+/sbin/service iptables stop;chkconfig --level 35 iptables off
+service network restart
+记得每次Ping master要先关防火墙，重启service network
+
+
+做完实验记得把电脑的ipv4改回来！把windows的防火墙开起来。
+
+
+
+
+
+vi /etc/xinetd.d/rlogin 
+vi /etc/xinetd.d/rsh
+vi /etc/pam.d/rsh
+service xinetd restart
+echo "rexec" >> /etc/securetty
+echo "rlogin" >> /etc/securetty
+echo "rsh" >> /etc/securetty
+echo rsh >>/etc/securetty
+
+more .rhosts
+
+vi /etc/hosts.env
+vi /etc/hosts.allow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

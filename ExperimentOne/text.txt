@@ -1,0 +1,38 @@
+su – 
+关闭防火墙：
+/sbin/service iptables stop;chkconfig --level 35 iptables off
+
+关闭SELINUX：
+vim /etc/selinux/config 修改令SELINUX=disabled 
+
+修改hostname：
+vim /etc/sysconfig/network 
+内容改为 NETWORK=yes
+HOSTNAME=master
+
+
+配置centos网络：
+su - 
+vim /etc/sysconfig/network-scripts/ifcfg-eth0
+
+ 
+修改（或者说是输入）
+DEVICE=eth0
+TYPE=Ethernet
+ONBOOT=yes
+NM_CONTROLLED=yes
+BOOTPROTO=static
+BROADCAST=192.168.224.255  
+IPADDR=192.168.224.130 
+NETMASK=255.255.255.0
+NETWORK=192.168.224.0 
+GATEWAY=192.168.224.2 
+
+修改hosts映射：
+vim /etc/hosts
+修改内容为
+192.168.224.130 master
+192.168.224.201 slave1
+192.168.224.202 slave2
+重启网络功能：
+service network restart 
