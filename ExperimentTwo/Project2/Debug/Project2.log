@@ -1,0 +1,4 @@
+﻿D:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中间目录(Debug\)包含从另一个项目(Project2.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  源.cpp
+c1xx : warning C4199: C++/CLI、C++/CX 或 OpenMP 不支持两阶段名称查找；请使用 /Zc:twoPhase-
+  Project2.vcxproj -> G:\school\ComputerArchitecture_Experiment\ExperimentTwo\Project2\Debug\Project1.exe
