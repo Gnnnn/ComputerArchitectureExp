@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 #TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.16299.0
 Debug|Win32|G:\school\ComputerArchitecture_Experiment\ExperimentTwo\Project2\|
+=======
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.16299.0
+Debug|Win32|G:\school\ComputerArchitecture_Experiment\ExperimentTwo\Project2\|
+>>>>>>> f159b6d8a5f0cbbcdce24e04581e65ba9f02f08d
