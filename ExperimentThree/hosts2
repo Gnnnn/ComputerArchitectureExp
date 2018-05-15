@@ -1,0 +1,2 @@
+master    2   /root/openmpi1.6.5/examples/hello_c
+slave2    2   /root/openmpi1.6.5/examples/hello_c
