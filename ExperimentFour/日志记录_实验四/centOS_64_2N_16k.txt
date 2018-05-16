@@ -1,0 +1,559 @@
+[BEGIN] 2014-4-19 21:43:22
+
+================================================================================
+HPLinpack 2.1  --  High-Performance Linpack benchmark  --   October 26, 2012
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    1960     2048 
+NB     :      60       80 
+PMAP   : Row-major process mapping
+P      :       4        2        8        8 
+Q      :       4        8        2        2 
+PFACT  :   Crout 
+NBMIN  :       4 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :  2ringM 
+DEPTH  :       1 
+SWAP   : Mix (threshold = 64)
+L1     : transposed form
+U      : transposed form
+EQUIL  : yes
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        1960    60     4     4              31.71              1.585e-01
+HPL_pdgesv() start time Sat Apr 19 21:41:43 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:42:15 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0033838 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        1960    80     4     4              33.70              1.491e-01
+HPL_pdgesv() start time Sat Apr 19 21:42:15 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:42:49 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0043921 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        2048    60     4     4              37.37              1.534e-01
+HPL_pdgesv() start time Sat Apr 19 21:42:49 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:43:27 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0043248 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        2048    80     4     4              30.29              1.893e-01
+HPL_pdgesv() start time Sat Apr 19 21:43:27 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:43:57 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0053804 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        1960    60     2     8              13.57              3.703e-01
+HPL_pdgesv() start time Sat Apr 19 21:43:58 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:44:11 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0038309 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        1960    80     2     8              10.31              4.875e-01
+HPL_pdgesv() start time Sat Apr 19 21:44:12 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:44:22 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0048630 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        2048    60     2     8              15.05              3.808e-01
+HPL_pdgesv() start time Sat Apr 19 21:44:23 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:44:38 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0043293 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        2048    80     2     8              10.97              5.225e-01
+HPL_pdgesv() start time Sat Apr 19 21:44:38 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:44:49 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0047480 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        1960    60     8     2              51.83              9.695e-02
+HPL_pdgesv() start time Sat Apr 19 21:44:49 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:45:41 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0052185 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        1960    80     8     2              50.64              9.925e-02
+HPL_pdgesv() start time Sat Apr 19 21:45:42 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:46:32 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0053629 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        2048    60     8     2              53.83              1.065e-01
+HPL_pdgesv() start time Sat Apr 19 21:46:33 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:47:26 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0050642 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        2048    80     8     2              54.14              1.059e-01
+HPL_pdgesv() start time Sat Apr 19 21:47:27 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:48:21 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0058876 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        1960    60     8     2              53.67              9.363e-02
+HPL_pdgesv() start time Sat Apr 19 21:48:21 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:49:15 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0052185 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        1960    80     8     2              50.55              9.942e-02
+HPL_pdgesv() start time Sat Apr 19 21:49:15 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:50:06 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0053629 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR13R2C4        2048    60     8     2              55.20              1.039e-01
+HPL_pdgesv() start time Sat Apr 19 21:50:06 2014
+
+HPL_pdgesv() end time   Sat Apr 19 21:51:01 2014
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0050642 ...... PASSED
+^Cmpirun: killing job...
+
+[root@client-192-255-241-193 Linux]# pwd
+/home/admin/hpl-2.1/bin/Linux
+[root@client-192-255-241-193 Linux]# top
+top - 21:51:22 up 23 min,  3 users,  load average: 34.64, 33.71, 18.26
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s): 20.8%us, 19.9%sy,  0.0%ni, 58.9%id,  0.1%wa,  0.0%hi,  0.2%si,  0.0%st
+Mem:   8060104k total,   796340k used,  7263764k free,    33232k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3989 root      20   0 15292 1380  844 R  3.7  0.0   0:00.05 top                 
+ 2872 root      20   0  128m  32m 7980 S  1.9  0.4   0:09.71 Xorg                
+ 3712 root      20   0 15300 1504  956 S  1.9  0.0   0:09.35 top                 
+    1 root      20   0 19360 1548 1224 S  0.0  0.0   0:02.47 init                
+    2 root      20   0     0    0    0 S  0.0  0.0   0:00.01 kthreadd            
+    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    4 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0         
+    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/0          
+    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    9 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/1         
+   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/1          
+   11 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/2         
+   12 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/2         top - 21:51:25 up 23 min,  3 users,  load average: 31.87, 33.15, 18.17
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.1%us,  0.1%sy,  0.0%ni, 99.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   791860k used,  7268244k free,    33232k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3712 root      20   0 15300 1504  956 S  1.0  0.0   0:09.38 top                 
+ 3418 root      20   0  329m  16m  13m S  0.7  0.2   0:02.99 vmtoolsd            
+   72 root      20   0     0    0    0 S  0.3  0.0   0:00.81 events/5            
+   82 root      20   0     0    0    0 S  0.3  0.0   0:00.13 events/15           
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.72 Xorg                
+ 3517 root      20   0  274m  21m 4644 S  0.3  0.3   0:00.74 gnome-screensav     
+ 3989 root      20   0 15296 1496  956 R  0.3  0.0   0:00.06 top                 
+    1 root      20   0 19360 1548 1224 S  0.0  0.0   0:02.47 init                
+    2 root      20   0     0    0    0 S  0.0  0.0   0:00.01 kthreadd            
+    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    4 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0         
+    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/0          
+    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         top - 21:51:28 up 23 min,  3 users,  load average: 29.32, 32.60, 18.07
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.1%sy,  0.0%ni, 99.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   791456k used,  7268648k free,    33232k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3989 root      20   0 15296 1496  956 R  1.0  0.0   0:00.09 top                 
+ 3712 root      20   0 15300 1504  956 S  0.7  0.0   0:09.40 top                 
+ 1806 root      20   0  180m 4404 3560 S  0.3  0.1   0:01.47 vmtoolsd            
+ 2139 root      20   0 10948  660  432 S  0.3  0.0   0:00.45 irqbalance          
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.73 Xorg                
+ 3386 root      20   0  226m 2028 1680 S  0.3  0.0   0:00.09 gvfs-afc-volume     
+ 3699 root      20   0  340m  16m  11m S  0.3  0.2   0:01.46 gnome-terminal      
+
+
+
+
+
+
+
+top - 21:51:31 up 23 min,  3 users,  load average: 29.32, 32.60, 18.07
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.1%us,  0.1%sy,  0.0%ni, 99.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   787364k used,  7272740k free,    33232k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.74 Xorg                
+ 3712 root      20   0 15300 1504  956 S  0.3  0.0   0:09.41 top                 
+ 3989 root      20   0 15296 1496  956 R  0.3  0.0   0:00.10 top                 
+    1 root      20   0 19360 1548 1224 S  0.0  0.0   0:02.47 init                
+    2 root      20   0     0    0    0 S  0.0  0.0   0:00.01 kthreadd            
+    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    4 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0         
+    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/0          
+    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    9 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/1         
+   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/1          
+   11 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/2         
+   12 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/2         top - 21:51:34 up 23 min,  3 users,  load average: 26.97, 32.05, 17.97
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.1%us,  0.1%sy,  0.0%ni, 99.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   786748k used,  7273356k free,    33232k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3712 root      20   0 15300 1504  956 S  0.7  0.0   0:09.43 top                 
+ 3989 root      20   0 15296 1496  956 R  0.7  0.0   0:00.12 top                 
+ 1806 root      20   0  180m 4404 3560 S  0.3  0.1   0:01.48 vmtoolsd            
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.75 Xorg                
+ 3418 root      20   0  329m  16m  13m S  0.3  0.2   0:03.00 vmtoolsd            
+ 3661 root      20   0  145m 2656 1936 S  0.3  0.0   0:00.48 ibus-daemon         
+    1 root      20   0 19360 1548 1224 S  0.0  0.0   0:02.47 init                
+    2 root      20   0     0    0    0 S  0.0  0.0   0:00.01 kthreadd            
+    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    4 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0         
+    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/0          
+    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    9 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/1         top - 21:51:37 up 23 min,  3 users,  load average: 26.97, 32.05, 17.97
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.1%sy,  0.0%ni, 99.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   783484k used,  7276620k free,    33232k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3712 root      20   0 15300 1504  956 S  1.0  0.0   0:09.46 top                 
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.76 Xorg                
+ 3989 root      20   0 15296 1496  956 R  0.3  0.0   0:00.13 top                 
+    1 root      20   0 19360 1548 1224 S  0.0  0.0   0:02.47 init                
+    2 root      20   0     0    0    0 S  0.0  0.0   0:00.01 kthreadd            
+    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    4 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0         
+    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/0          
+    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    9 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/1         
+   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/1          
+   11 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/2         
+   12 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/2         top - 21:51:40 up 23 min,  3 users,  load average: 24.81, 31.52, 17.87
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.1%us,  0.1%sy,  0.0%ni, 99.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   783148k used,  7276956k free,    33232k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3989 root      20   0 15296 1496  956 R  0.7  0.0   0:00.15 top                 
+ 3384 root      20   0 40336  604  352 S  0.3  0.0   0:00.37 udisks-daemon       
+ 3699 root      20   0  340m  16m  11m S  0.3  0.2   0:01.47 gnome-terminal      
+ 3712 root      20   0 15300 1504  956 S  0.3  0.0   0:09.47 top                 
+    1 root      20   0 19360 1548 1224 S  0.0  0.0   0:02.47 init                
+    2 root      20   0     0    0    0 S  0.0  0.0   0:00.01 kthreadd            
+    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    4 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0         
+    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/0          
+    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    9 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/1         
+   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/1          
+   11 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/2         top - 21:51:43 up 23 min,  3 users,  load average: 22.82, 31.00, 17.78
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.1%us,  0.1%sy,  0.0%ni, 99.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   781648k used,  7278456k free,    33232k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3712 root      20   0 15300 1504  956 S  0.7  0.0   0:09.49 top                 
+ 3989 root      20   0 15296 1496  956 R  0.7  0.0   0:00.17 top                 
+   72 root      20   0     0    0    0 S  0.3  0.0   0:00.82 events/5            
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.77 Xorg                
+ 3384 root      20   0 40336  604  352 S  0.3  0.0   0:00.38 udisks-daemon       
+ 3418 root      20   0  329m  16m  13m S  0.3  0.2   0:03.01 vmtoolsd            
+    1 root      20   0 19360 1548 1224 S  0.0  0.0   0:02.47 init                
+    2 root      20   0     0    0    0 S  0.0  0.0   0:00.01 kthreadd            
+    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    4 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0         
+    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/0          
+    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    9 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/1         top - 21:51:46 up 23 min,  3 users,  load average: 22.82, 31.00, 17.78
+Tasks: 399 total,   2 running, 397 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.1%us,  0.1%sy,  0.0%ni, 99.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   782508k used,  7277596k free,    33232k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3712 root      20   0 15300 1504  956 S  0.7  0.0   0:09.51 top                 
+    7 root      RT   0     0    0    0 S  0.3  0.0   0:00.01 migration/1         
+  394 root      20   0     0    0    0 S  0.3  0.0   0:00.32 scsi_eh_1           
+ 1806 root      20   0  180m 4404 3560 S  0.3  0.1   0:01.49 vmtoolsd            
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.78 Xorg                
+ 3418 root      20   0  329m  16m  13m S  0.3  0.2   0:03.02 vmtoolsd            
+ 3989 root      20   0 15296 1496  956 R  0.3  0.0   0:00.18 top                 
+    1 root      20   0 19360 1548 1224 S  0.0  0.0   0:02.47 init                
+    2 root      20   0     0    0    0 S  0.0  0.0   0:00.01 kthreadd            
+    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    4 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0         
+    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/0          
+
+top - 21:51:49 up 23 min,  3 users,  load average: 20.99, 30.48, 17.68
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.1%us,  0.1%sy,  0.0%ni, 99.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   782208k used,  7277896k free,    33232k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3712 root      20   0 15300 1504  956 S  1.0  0.0   0:09.54 top                 
+ 3989 root      20   0 15296 1496  956 R  0.7  0.0   0:00.20 top                 
+  126 root      20   0     0    0    0 S  0.3  0.0   0:00.11 ata/1               
+  964 root      20   0     0    0    0 S  0.3  0.0   0:00.04 vmmemctl            
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.79 Xorg                
+ 3476 root      20   0  251m 7428 5892 S  0.3  0.1   0:00.10 gnome-power-man     
+    1 root      20   0 19360 1548 1224 S  0.0  0.0   0:02.47 init                
+    2 root      20   0     0    0    0 S  0.0  0.0   0:00.01 kthreadd            
+    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    4 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0         
+    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/0          
+    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.01 migration/1         
+
+top - 21:51:52 up 23 min,  3 users,  load average: 20.99, 30.48, 17.68
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.1%us,  0.1%sy,  0.0%ni, 99.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   781760k used,  7278344k free,    33240k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3989 root      20   0 15296 1496  956 R  0.7  0.0   0:00.22 top                 
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.80 Xorg                
+ 3361 root      20   0 97860 3864 2940 S  0.3  0.0   0:00.32 sshd                
+ 3418 root      20   0  329m  16m  13m S  0.3  0.2   0:03.03 vmtoolsd            
+ 3699 root      20   0  340m  16m  11m S  0.3  0.2   0:01.48 gnome-terminal      
+ 3712 root      20   0 15300 1504  956 S  0.3  0.0   0:09.55 top                 
+
+
+
+
+
+
+
+
+top - 21:51:55 up 23 min,  3 users,  load average: 19.31, 29.98, 17.59
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.1%us,  0.1%sy,  0.0%ni, 99.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   781460k used,  7278644k free,    33240k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3712 root      20   0 15300 1504  956 S  0.7  0.0   0:09.57 top                 
+ 3989 root      20   0 15296 1496  956 R  0.7  0.0   0:00.24 top                 
+  125 root      20   0     0    0    0 S  0.3  0.0   0:00.33 ata/0               
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.81 Xorg                
+ 3418 root      20   0  329m  16m  13m S  0.3  0.2   0:03.04 vmtoolsd            
+    1 root      20   0 19360 1548 1224 S  0.0  0.0   0:02.47 init                
+    2 root      20   0     0    0    0 S  0.0  0.0   0:00.01 kthreadd            
+    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    4 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0         
+    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/0          
+    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.01 migration/1         
+    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    9 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/1         
+   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/1          top - 21:51:59 up 23 min,  3 users,  load average: 17.77, 29.48, 17.49
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.1%us,  0.1%sy,  0.0%ni, 99.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   781460k used,  7278644k free,    33240k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3712 root      20   0 15300 1504  956 S  0.7  0.0   0:09.59 top                 
+ 3989 root      20   0 15296 1496  956 R  0.7  0.0   0:00.26 top                 
+   72 root      20   0     0    0    0 S  0.3  0.0   0:00.83 events/5            
+ 2139 root      20   0 10948  660  432 S  0.3  0.0   0:00.46 irqbalance          
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.82 Xorg                
+
+
+
+
+
+
+
+
+
+top - 21:52:02 up 23 min,  3 users,  load average: 17.77, 29.48, 17.49
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.1%us,  0.1%sy,  0.0%ni, 99.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   781392k used,  7278712k free,    33240k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3712 root      20   0 15300 1504  956 S  0.7  0.0   0:09.61 top                 
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.83 Xorg                
+ 3418 root      20   0  329m  16m  13m S  0.3  0.2   0:03.05 vmtoolsd            
+ 3668 root      20   0  338m  25m  11m S  0.3  0.3   0:00.52 python              
+ 3989 root      20   0 15296 1496  956 R  0.3  0.0   0:00.27 top                 
+
+
+
+
+
+
+
+
+
+top - 21:52:05 up 23 min,  3 users,  load average: 16.34, 28.99, 17.40
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.1%us,  0.1%sy,  0.0%ni, 99.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   781280k used,  7278824k free,    33240k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 1806 root      20   0  180m 4404 3560 S  0.7  0.1   0:01.51 vmtoolsd            
+ 3712 root      20   0 15300 1504  956 S  0.7  0.0   0:09.63 top                 
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.84 Xorg                
+ 3699 root      20   0  340m  16m  11m S  0.3  0.2   0:01.49 gnome-terminal      
+ 3989 root      20   0 15296 1496  956 R  0.3  0.0   0:00.28 top                 
+
+
+
+
+
+
+
+
+
+top - 21:52:08 up 23 min,  3 users,  load average: 16.34, 28.99, 17.40
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.1%us,  0.1%sy,  0.0%ni, 99.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   781280k used,  7278824k free,    33240k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3418 root      20   0  329m  16m  13m S  0.7  0.2   0:03.07 vmtoolsd            
+ 3989 root      20   0 15296 1496  956 R  0.7  0.0   0:00.30 top                 
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.85 Xorg                
+ 3384 root      20   0 40336  604  352 S  0.3  0.0   0:00.39 udisks-daemon       
+ 3712 root      20   0 15300 1504  956 S  0.3  0.0   0:09.64 top                 
+
+
+
+
+
+
+
+
+
+top - 21:52:11 up 23 min,  3 users,  load average: 15.03, 28.51, 17.30
+Tasks: 399 total,   1 running, 398 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.1%sy,  0.0%ni, 99.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   8060104k total,   781276k used,  7278828k free,    33240k buffers
+Swap:  4063224k total,        0k used,  4063224k free,   322228k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND             
+ 3712 root      20   0 15300 1504  956 S  0.7  0.0   0:09.66 top                 
+ 2872 root      20   0  128m  32m 7980 S  0.3  0.4   0:09.86 Xorg                
+ 3989 root      20   0 15296 1496  956 R  0.3  0.0   0:00.31 top                 
+    1 root      20   0 19360 1548 1224 S  0.0  0.0   0:02.47 init                
+    2 root      20   0     0    0    0 S  0.0  0.0   0:00.01 kthreadd            
+    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    4 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0         
+    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0         
+    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/0          
+    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.01 migration/1         
+    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1         
+    9 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/1         
+   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 watchdog/1          
+   11 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/2         
+   12 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/2         
+[END] 2014-4-19 21:54:09
