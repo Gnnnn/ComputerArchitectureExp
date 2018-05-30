@@ -1,0 +1,22 @@
+#过期
+2018-05-29T12:45:26.357861Z 1 [Note] A temporary password is generated for root@localhost: %uie5efDYbD8
+#97
+2018-05-29T14:23:09.307231Z 1 [Note] A temporary password is generated for root@localhost: b2lgOs;U;LKE
+后改为test
+
+#150
+2018-05-29T15:57:52.571758Z 1 [Note] A temporary password is generated for root@localhost: sljSEj>?x9sw
+#150 new
+2018-05-29T16:41:48.177156Z 1 [Note] A temporary password is generated for root@localhost: kC+HuY1Rb?x1
+
+2018-05-29T16:50:50.567912Z 1 [Note] A temporary password is generated for root@localhost: a-Is:!d!u9Sc
+2018-05-29T17:05:54.242798Z 1 [Note] A temporary password is generated for root@localhost: d*MKuyyu=2eE
+2018-05-29T17:14:36.920393Z 1 [Note] A temporary password is generated for root@localhost: OeXe<dkid3N%
+
+2018-05-29T17:39:34.082629Z 1 [Note] A temporary password is generated for root@localhost: FLg(4:wpJypQ
+
+2018-05-29T19:15:29.876578Z 1 [Note] A temporary password is generated for root@localhost: J1q42msfC7<*
+
+2018-05-29T19:40:01.217071Z 1 [Note] A temporary password is generated for root@localhost: j=9w?uU%QjvT
+
+SET PASSWORD = PASSWORD('d*MKuyyu=2eE'); 

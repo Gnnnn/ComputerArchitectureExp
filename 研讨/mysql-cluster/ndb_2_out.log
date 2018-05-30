@@ -1,0 +1,1392 @@
+2018-05-30 04:14:44 [ndbd] INFO     -- Angel pid: 22103 started child: 22104
+2018-05-30 04:14:44 [ndbd] INFO     -- Normal start of data node using checkpoint and log info if existing
+2018-05-30 04:14:44 [ndbd] INFO     -- Configuration fetched from '10.1.138.116:1186', generation: 1
+2018-05-30 04:14:44 [ndbd] INFO     -- Changing directory to '/var/lib/mysql-cluster'
+2018-05-30 04:14:44 [ndbd] INFO     -- MaxNoOfTriggers set to 1400
+NDBMT: non-mt
+2018-05-30 04:14:44 [ndbd] INFO     -- NDB Cluster -- DB node 2
+2018-05-30 04:14:44 [ndbd] INFO     -- mysql-5.7.17 ndb-7.5.5 --
+2018-05-30 04:14:44 [ndbd] INFO     -- Memory Allocation for global memory pools Starting
+2018-05-30 04:14:44 [ndbd] INFO     -- numa_set_interleave_mask(numa_all_nodes) : OK
+2018-05-30 04:14:44 [ndbd] INFO     -- Ndbd_mem_manager::init(1) min: 638Mb initial: 766Mb
+2018-05-30 04:14:44 [ndbd] INFO     -- Touch Memory Starting, 1152 pages, page size = 32768
+2018-05-30 04:14:44 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 04:14:44 [ndbd] INFO     -- Adding 36Mb to ZONE_LO (1,1151)
+2018-05-30 04:14:44 [ndbd] INFO     -- Memory Allocation for global memory pools Completed
+2018-05-30 04:14:44 [ndbd] INFO     -- Loading blocks for data node run-time environment
+2018-05-30 04:14:44 [ndbd] INFO     -- Starting Sending and Receiving services
+Started thread, index = 0, id = 22106, type = SocketClientThread
+Started thread, index = 1, id = 22105, type = WatchDogThread
+Started thread, index = 2, id = 22107, type = SocketServerThread
+2018-05-30 04:14:44 [ndbd] INFO     -- Starting the data node run-time environment
+2018-05-30 04:14:44 [ndbd] INFO     -- First START_ORD executed to connect MGM servers
+2018-05-30 04:14:44 [ndbd] INFO     -- Received second START_ORD as part of normal start
+2018-05-30 04:14:44 [ndbd] INFO     -- Disconnect all non-MGM servers
+2018-05-30 04:14:44 [ndbd] INFO     -- Start excuting the start phases
+2018-05-30 04:14:44 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 0, name = CMVMI
+2018-05-30 04:14:44 [ndbd] INFO     -- Start initiated (mysql-5.7.17 ndb-7.5.5)
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 4, id = 22108, type = NdbfsThread
+2018-05-30 04:14:44 [ndbd] INFO     -- Touch Memory Starting, 23368 pages, page size = 32768
+2018-05-30 04:14:45 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 04:14:45 [ndbd] INFO     -- Adding 731Mb to ZONE_LO (1152,23368)
+2018-05-30 04:14:45 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 1, name = NDBFS
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 5, id = 22117, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 6, id = 22118, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 7, id = 22119, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 8, id = 22120, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 9, id = 22121, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 10, id = 22122, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 11, id = 22123, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 12, id = 22124, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 13, id = 22125, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 14, id = 22126, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 15, id = 22127, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 16, id = 22128, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 17, id = 22129, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 18, id = 22130, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 19, id = 22131, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 20, id = 22132, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 21, id = 22133, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 22, id = 22134, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 23, id = 22135, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 24, id = 22136, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 25, id = 22137, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 26, id = 22138, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 27, id = 22139, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 28, id = 22140, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 29, id = 22141, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 30, id = 22142, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 31, id = 22143, type = NdbfsThread
+Started thread, index = 32, id = 22144, type = NdbfsThread
+Started thread, index = 33, id = 22145, type = NdbfsThread
+2018-05-30 04:14:45 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 2, name = DBINFO
+2018-05-30 04:14:45 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 3, name = DBTUP
+2018-05-30 04:14:45 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 4, name = DBACC
+2018-05-30 04:14:45 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 5, name = DBTC
+2018-05-30 04:14:45 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 6, name = DBLQH
+LCPFragWatchdog : WarnElapsed : 20000(ms) MaxElapsed 60000(ms) : period millis : 10000
+2018-05-30 04:14:45 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 7, name = DBTUX
+2018-05-30 04:14:45 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 8, name = DBDICT
+2018-05-30 04:14:46 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 9, name = DBDIH
+2018-05-30 04:14:46 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 10, name = NDBCNTR
+2018-05-30 04:14:46 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 11, name = QMGR
+2018-05-30 04:14:46 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 12, name = TRIX
+2018-05-30 04:14:46 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 13, name = BACKUP
+2018-05-30 04:14:46 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 14, name = DBUTIL
+2018-05-30 04:14:46 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 15, name = SUMA
+2018-05-30 04:14:46 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 16, name = TSMAN
+2018-05-30 04:14:46 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 17, name = LGMAN
+2018-05-30 04:14:46 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 18, name = PGMAN
+pgman: page buffer entries = 10
+2018-05-30 04:14:46 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 19, name = RESTORE
+2018-05-30 04:14:46 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 20, name = DBSPJ
+2018-05-30 04:14:46 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 21, name = THRMAN
+2018-05-30 04:14:46 [ndbd] INFO     -- READ_CONFIG_REQ phase completed, this phase is used to read configuration and to calculate various sizes and allocate almost all memory needed by the data node in its lifetime
+2018-05-30 04:14:46 [ndbd] INFO     -- Start phase 0 completed
+2018-05-30 04:14:46 [ndbd] INFO     -- Phase 0 has made some file system initialisations
+2018-05-30 04:14:46 [ndbd] INFO     -- Starting QMGR phase 1
+2018-05-30 04:14:46 [ndbd] INFO     -- DIH reported initial start, now starting the Node Inclusion Protocol
+2018-05-30 04:21:51 [ndbd] INFO     -- The data node run-time environment has been stopped
+2018-05-30 04:21:51 [ndbd] INFO     -- Shutdown initiated
+2018-05-30 04:21:51 [ndbd] INFO     -- Shutdown completed - exiting
+2018-05-30 04:21:51 [ndbd] INFO     -- Angel shutting down
+2018-05-30 04:21:51 [ndbd] INFO     -- Node 2: Node shutdown completed.
+2018-05-30 04:35:31 [ndbd] INFO     -- Angel pid: 23286 started child: 23287
+2018-05-30 04:35:31 [ndbd] INFO     -- Initial start of data node, ignoring any info on disk
+2018-05-30 04:35:31 [ndbd] INFO     -- Configuration fetched from '10.1.138.116:1186', generation: 1
+2018-05-30 04:35:31 [ndbd] INFO     -- Changing directory to '/var/lib/mysql-cluster'
+2018-05-30 04:35:31 [ndbd] INFO     -- MaxNoOfTriggers set to 1400
+NDBMT: non-mt
+2018-05-30 04:35:31 [ndbd] INFO     -- NDB Cluster -- DB node 2
+2018-05-30 04:35:31 [ndbd] INFO     -- mysql-5.7.17 ndb-7.5.5 --
+2018-05-30 04:35:31 [ndbd] INFO     -- Memory Allocation for global memory pools Starting
+2018-05-30 04:35:31 [ndbd] INFO     -- numa_set_interleave_mask(numa_all_nodes) : OK
+2018-05-30 04:35:31 [ndbd] INFO     -- Ndbd_mem_manager::init(1) min: 638Mb initial: 766Mb
+2018-05-30 04:35:31 [ndbd] INFO     -- Touch Memory Starting, 1152 pages, page size = 32768
+2018-05-30 04:35:31 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 04:35:31 [ndbd] INFO     -- Adding 36Mb to ZONE_LO (1,1151)
+2018-05-30 04:35:31 [ndbd] INFO     -- Memory Allocation for global memory pools Completed
+2018-05-30 04:35:31 [ndbd] INFO     -- Loading blocks for data node run-time environment
+2018-05-30 04:35:31 [ndbd] INFO     -- Starting Sending and Receiving services
+Started thread, index = 0, id = 23289, type = SocketClientThread
+Started thread, index = 1, id = 23288, type = WatchDogThread
+Started thread, index = 2, id = 23290, type = SocketServerThread
+2018-05-30 04:35:32 [ndbd] INFO     -- Starting the data node run-time environment
+2018-05-30 04:35:32 [ndbd] INFO     -- First START_ORD executed to connect MGM servers
+2018-05-30 04:35:32 [ndbd] INFO     -- Received second START_ORD as part of normal start
+2018-05-30 04:35:32 [ndbd] INFO     -- Disconnect all non-MGM servers
+2018-05-30 04:35:32 [ndbd] INFO     -- Start excuting the start phases
+2018-05-30 04:35:32 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 0, name = CMVMI
+2018-05-30 04:35:32 [ndbd] INFO     -- Start initiated (mysql-5.7.17 ndb-7.5.5)
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 4, id = 23291, type = NdbfsThread
+2018-05-30 04:35:32 [ndbd] INFO     -- Touch Memory Starting, 23368 pages, page size = 32768
+2018-05-30 04:35:32 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 04:35:32 [ndbd] INFO     -- Adding 731Mb to ZONE_LO (1152,23368)
+2018-05-30 04:35:32 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 1, name = NDBFS
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 5, id = 23300, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 6, id = 23301, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 7, id = 23302, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 8, id = 23303, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 9, id = 23304, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 10, id = 23305, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 11, id = 23306, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 12, id = 23307, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 13, id = 23308, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 14, id = 23309, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 15, id = 23310, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 16, id = 23311, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 17, id = 23312, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 18, id = 23313, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 19, id = 23314, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 20, id = 23315, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 21, id = 23316, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 22, id = 23317, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 23, id = 23318, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 24, id = 23319, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 25, id = 23320, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 26, id = 23321, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 27, id = 23322, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 28, id = 23323, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 29, id = 23324, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 30, id = 23325, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 31, id = 23326, type = NdbfsThread
+Started thread, index = 32, id = 23327, type = NdbfsThread
+Started thread, index = 33, id = 23328, type = NdbfsThread
+2018-05-30 04:35:32 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 2, name = DBINFO
+2018-05-30 04:35:32 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 3, name = DBTUP
+2018-05-30 04:35:32 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 4, name = DBACC
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 5, name = DBTC
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 6, name = DBLQH
+LCPFragWatchdog : WarnElapsed : 20000(ms) MaxElapsed 60000(ms) : period millis : 10000
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 7, name = DBTUX
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 8, name = DBDICT
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 9, name = DBDIH
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 10, name = NDBCNTR
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 11, name = QMGR
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 12, name = TRIX
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 13, name = BACKUP
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 14, name = DBUTIL
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 15, name = SUMA
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 16, name = TSMAN
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 17, name = LGMAN
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 18, name = PGMAN
+pgman: page buffer entries = 10
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 19, name = RESTORE
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 20, name = DBSPJ
+2018-05-30 04:35:33 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 21, name = THRMAN
+2018-05-30 04:35:33 [ndbd] INFO     -- READ_CONFIG_REQ phase completed, this phase is used to read configuration and to calculate various sizes and allocate almost all memory needed by the data node in its lifetime
+2018-05-30 04:35:33 [ndbd] INFO     -- Clearing filesystem in initial start
+2018-05-30 04:35:33 [ndbd] INFO     -- Start phase 0 completed
+2018-05-30 04:35:33 [ndbd] INFO     -- Phase 0 has made some file system initialisations
+2018-05-30 04:35:33 [ndbd] INFO     -- Starting QMGR phase 1
+2018-05-30 04:35:33 [ndbd] INFO     -- DIH reported initial start, now starting the Node Inclusion Protocol
+2018-05-30 04:46:57 [ndbd] INFO     -- The data node run-time environment has been stopped
+2018-05-30 04:46:57 [ndbd] INFO     -- Shutdown initiated
+2018-05-30 04:46:58 [ndbd] INFO     -- Shutdown completed - exiting
+2018-05-30 04:46:58 [ndbd] INFO     -- Angel shutting down
+2018-05-30 04:46:58 [ndbd] INFO     -- Node 2: Node shutdown completed.
+2018-05-30 04:50:13 [ndbd] INFO     -- Angel pid: 24122 started child: 24123
+2018-05-30 04:50:13 [ndbd] INFO     -- Normal start of data node using checkpoint and log info if existing
+2018-05-30 04:50:13 [ndbd] INFO     -- Configuration fetched from '10.1.138.116:1186', generation: 1
+2018-05-30 04:50:13 [ndbd] INFO     -- Changing directory to '/var/lib/mysql-cluster'
+2018-05-30 04:50:13 [ndbd] INFO     -- MaxNoOfTriggers set to 1400
+NDBMT: non-mt
+2018-05-30 04:50:13 [ndbd] INFO     -- NDB Cluster -- DB node 2
+2018-05-30 04:50:13 [ndbd] INFO     -- mysql-5.7.17 ndb-7.5.5 --
+2018-05-30 04:50:13 [ndbd] INFO     -- Memory Allocation for global memory pools Starting
+2018-05-30 04:50:13 [ndbd] INFO     -- numa_set_interleave_mask(numa_all_nodes) : OK
+2018-05-30 04:50:13 [ndbd] INFO     -- Ndbd_mem_manager::init(1) min: 638Mb initial: 766Mb
+2018-05-30 04:50:13 [ndbd] INFO     -- Touch Memory Starting, 1152 pages, page size = 32768
+2018-05-30 04:50:13 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 04:50:13 [ndbd] INFO     -- Adding 36Mb to ZONE_LO (1,1151)
+2018-05-30 04:50:13 [ndbd] INFO     -- Memory Allocation for global memory pools Completed
+2018-05-30 04:50:13 [ndbd] INFO     -- Loading blocks for data node run-time environment
+2018-05-30 04:50:13 [ndbd] INFO     -- Starting Sending and Receiving services
+Started thread, index = 0, id = 24125, type = SocketClientThread
+Started thread, index = 1, id = 24124, type = WatchDogThread
+Started thread, index = 2, id = 24126, type = SocketServerThread
+2018-05-30 04:50:13 [ndbd] INFO     -- Starting the data node run-time environment
+2018-05-30 04:50:13 [ndbd] INFO     -- First START_ORD executed to connect MGM servers
+2018-05-30 04:50:13 [ndbd] INFO     -- Received second START_ORD as part of normal start
+2018-05-30 04:50:13 [ndbd] INFO     -- Disconnect all non-MGM servers
+2018-05-30 04:50:13 [ndbd] INFO     -- Start excuting the start phases
+2018-05-30 04:50:13 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 0, name = CMVMI
+2018-05-30 04:50:13 [ndbd] INFO     -- Start initiated (mysql-5.7.17 ndb-7.5.5)
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 4, id = 24127, type = NdbfsThread
+2018-05-30 04:50:13 [ndbd] INFO     -- Touch Memory Starting, 23368 pages, page size = 32768
+2018-05-30 04:50:14 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 04:50:14 [ndbd] INFO     -- Adding 731Mb to ZONE_LO (1152,23368)
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 1, name = NDBFS
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 5, id = 24136, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 6, id = 24137, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 7, id = 24138, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 8, id = 24139, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 9, id = 24140, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 10, id = 24141, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 11, id = 24142, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 12, id = 24143, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 13, id = 24144, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 14, id = 24145, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 15, id = 24146, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 16, id = 24147, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 17, id = 24148, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 18, id = 24149, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 19, id = 24150, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 20, id = 24151, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 21, id = 24152, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 22, id = 24153, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 23, id = 24154, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 24, id = 24155, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 25, id = 24156, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 26, id = 24157, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 27, id = 24158, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 28, id = 24159, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 29, id = 24160, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 30, id = 24161, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 31, id = 24162, type = NdbfsThread
+Started thread, index = 32, id = 24163, type = NdbfsThread
+Started thread, index = 33, id = 24164, type = NdbfsThread
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 2, name = DBINFO
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 3, name = DBTUP
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 4, name = DBACC
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 5, name = DBTC
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 6, name = DBLQH
+LCPFragWatchdog : WarnElapsed : 20000(ms) MaxElapsed 60000(ms) : period millis : 10000
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 7, name = DBTUX
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 8, name = DBDICT
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 9, name = DBDIH
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 10, name = NDBCNTR
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 11, name = QMGR
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 12, name = TRIX
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 13, name = BACKUP
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 14, name = DBUTIL
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 15, name = SUMA
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 16, name = TSMAN
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 17, name = LGMAN
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 18, name = PGMAN
+pgman: page buffer entries = 10
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 19, name = RESTORE
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 20, name = DBSPJ
+2018-05-30 04:50:14 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 21, name = THRMAN
+2018-05-30 04:50:14 [ndbd] INFO     -- READ_CONFIG_REQ phase completed, this phase is used to read configuration and to calculate various sizes and allocate almost all memory needed by the data node in its lifetime
+2018-05-30 04:50:14 [ndbd] INFO     -- Start phase 0 completed
+2018-05-30 04:50:14 [ndbd] INFO     -- Phase 0 has made some file system initialisations
+2018-05-30 04:50:14 [ndbd] INFO     -- Starting QMGR phase 1
+2018-05-30 04:50:14 [ndbd] INFO     -- DIH reported initial start, now starting the Node Inclusion Protocol
+2018-05-30 04:50:21 [ndbd] INFO     -- Received signal 15. Performing stop.
+2018-05-30 04:50:21 [ndbd] INFO     -- Received signal 1. Performing stop.
+2018-05-30 04:50:21 [ndbd] INFO     -- The data node run-time environment has been stopped
+2018-05-30 04:50:21 [ndbd] INFO     -- Shutdown initiated
+2018-05-30 04:50:21 [ndbd] INFO     -- Shutdown completed - exiting
+2018-05-30 04:50:22 [ndbd] INFO     -- Angel shutting down
+2018-05-30 04:50:22 [ndbd] INFO     -- Node 2: Node shutdown completed. Initiated by signal 1.
+2018-05-30 04:54:39 [ndbd] INFO     -- Angel pid: 2747 started child: 2748
+2018-05-30 04:54:39 [ndbd] INFO     -- Normal start of data node using checkpoint and log info if existing
+2018-05-30 04:54:39 [ndbd] INFO     -- Configuration fetched from '10.1.138.116:1186', generation: 1
+2018-05-30 04:54:39 [ndbd] INFO     -- Changing directory to '/var/lib/mysql-cluster'
+2018-05-30 04:54:39 [ndbd] INFO     -- MaxNoOfTriggers set to 1400
+NDBMT: non-mt
+2018-05-30 04:54:39 [ndbd] INFO     -- NDB Cluster -- DB node 2
+2018-05-30 04:54:39 [ndbd] INFO     -- mysql-5.7.17 ndb-7.5.5 --
+2018-05-30 04:54:39 [ndbd] INFO     -- Memory Allocation for global memory pools Starting
+2018-05-30 04:54:39 [ndbd] INFO     -- numa_set_interleave_mask(numa_all_nodes) : OK
+2018-05-30 04:54:39 [ndbd] INFO     -- Ndbd_mem_manager::init(1) min: 638Mb initial: 766Mb
+2018-05-30 04:54:39 [ndbd] INFO     -- Touch Memory Starting, 1152 pages, page size = 32768
+2018-05-30 04:54:39 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 04:54:39 [ndbd] INFO     -- Adding 36Mb to ZONE_LO (1,1151)
+2018-05-30 04:54:39 [ndbd] INFO     -- Memory Allocation for global memory pools Completed
+2018-05-30 04:54:39 [ndbd] INFO     -- Loading blocks for data node run-time environment
+2018-05-30 04:54:40 [ndbd] INFO     -- Starting Sending and Receiving services
+Started thread, index = 0, id = 2750, type = SocketClientThread
+Started thread, index = 1, id = 2749, type = WatchDogThread
+Started thread, index = 2, id = 2751, type = SocketServerThread
+2018-05-30 04:54:40 [ndbd] INFO     -- Starting the data node run-time environment
+2018-05-30 04:54:40 [ndbd] INFO     -- First START_ORD executed to connect MGM servers
+2018-05-30 04:54:40 [ndbd] INFO     -- Received second START_ORD as part of normal start
+2018-05-30 04:54:40 [ndbd] INFO     -- Disconnect all non-MGM servers
+2018-05-30 04:54:40 [ndbd] INFO     -- Start excuting the start phases
+2018-05-30 04:54:40 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 0, name = CMVMI
+2018-05-30 04:54:40 [ndbd] INFO     -- Start initiated (mysql-5.7.17 ndb-7.5.5)
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 4, id = 2752, type = NdbfsThread
+2018-05-30 04:54:40 [ndbd] INFO     -- Touch Memory Starting, 23368 pages, page size = 32768
+2018-05-30 04:54:40 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 04:54:40 [ndbd] INFO     -- Adding 731Mb to ZONE_LO (1152,23368)
+2018-05-30 04:54:40 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 1, name = NDBFS
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 5, id = 2761, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 6, id = 2762, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 7, id = 2763, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 8, id = 2764, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 9, id = 2765, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 10, id = 2766, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 11, id = 2767, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 12, id = 2768, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 13, id = 2769, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 14, id = 2770, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 15, id = 2771, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 16, id = 2772, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 17, id = 2773, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 18, id = 2774, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 19, id = 2775, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 20, id = 2776, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 21, id = 2777, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 22, id = 2778, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 23, id = 2779, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 24, id = 2780, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 25, id = 2781, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 26, id = 2782, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 27, id = 2783, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 28, id = 2784, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 29, id = 2785, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 30, id = 2786, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 31, id = 2787, type = NdbfsThread
+Started thread, index = 32, id = 2788, type = NdbfsThread
+Started thread, index = 33, id = 2789, type = NdbfsThread
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 2, name = DBINFO
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 3, name = DBTUP
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 4, name = DBACC
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 5, name = DBTC
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 6, name = DBLQH
+LCPFragWatchdog : WarnElapsed : 20000(ms) MaxElapsed 60000(ms) : period millis : 10000
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 7, name = DBTUX
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 8, name = DBDICT
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 9, name = DBDIH
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 10, name = NDBCNTR
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 11, name = QMGR
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 12, name = TRIX
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 13, name = BACKUP
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 14, name = DBUTIL
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 15, name = SUMA
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 16, name = TSMAN
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 17, name = LGMAN
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 18, name = PGMAN
+pgman: page buffer entries = 10
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 19, name = RESTORE
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 20, name = DBSPJ
+2018-05-30 04:54:41 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 21, name = THRMAN
+2018-05-30 04:54:41 [ndbd] INFO     -- READ_CONFIG_REQ phase completed, this phase is used to read configuration and to calculate various sizes and allocate almost all memory needed by the data node in its lifetime
+2018-05-30 04:54:41 [ndbd] INFO     -- Start phase 0 completed
+2018-05-30 04:54:41 [ndbd] INFO     -- Phase 0 has made some file system initialisations
+2018-05-30 04:54:41 [ndbd] INFO     -- Starting QMGR phase 1
+2018-05-30 04:54:41 [ndbd] INFO     -- DIH reported initial start, now starting the Node Inclusion Protocol
+2018-05-30 05:28:28 [ndbd] INFO     -- The data node run-time environment has been stopped
+2018-05-30 05:28:28 [ndbd] INFO     -- Shutdown initiated
+2018-05-30 05:28:28 [ndbd] INFO     -- Shutdown completed - exiting
+2018-05-30 05:28:28 [ndbd] INFO     -- Angel shutting down
+2018-05-30 05:28:28 [ndbd] INFO     -- Node 2: Node shutdown completed.
+2018-05-30 05:31:01 [ndbd] INFO     -- Angel pid: 4326 started child: 4327
+2018-05-30 05:31:01 [ndbd] INFO     -- Normal start of data node using checkpoint and log info if existing
+2018-05-30 05:31:02 [ndbd] INFO     -- Configuration fetched from '10.1.138.116:1186', generation: 1
+2018-05-30 05:31:02 [ndbd] INFO     -- Changing directory to '/var/lib/mysql-cluster'
+2018-05-30 05:31:02 [ndbd] INFO     -- MaxNoOfTriggers set to 1400
+NDBMT: non-mt
+2018-05-30 05:31:02 [ndbd] INFO     -- NDB Cluster -- DB node 2
+2018-05-30 05:31:02 [ndbd] INFO     -- mysql-5.7.17 ndb-7.5.5 --
+2018-05-30 05:31:02 [ndbd] INFO     -- Memory Allocation for global memory pools Starting
+2018-05-30 05:31:02 [ndbd] INFO     -- numa_set_interleave_mask(numa_all_nodes) : OK
+2018-05-30 05:31:02 [ndbd] INFO     -- Ndbd_mem_manager::init(1) min: 638Mb initial: 766Mb
+2018-05-30 05:31:02 [ndbd] INFO     -- Touch Memory Starting, 1152 pages, page size = 32768
+2018-05-30 05:31:02 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 05:31:02 [ndbd] INFO     -- Adding 36Mb to ZONE_LO (1,1151)
+2018-05-30 05:31:02 [ndbd] INFO     -- Memory Allocation for global memory pools Completed
+2018-05-30 05:31:02 [ndbd] INFO     -- Loading blocks for data node run-time environment
+2018-05-30 05:31:02 [ndbd] INFO     -- Starting Sending and Receiving services
+Started thread, index = 0, id = 4329, type = SocketClientThread
+Started thread, index = 1, id = 4328, type = WatchDogThread
+Started thread, index = 2, id = 4330, type = SocketServerThread
+2018-05-30 05:31:02 [ndbd] INFO     -- Starting the data node run-time environment
+2018-05-30 05:31:02 [ndbd] INFO     -- First START_ORD executed to connect MGM servers
+2018-05-30 05:31:02 [ndbd] INFO     -- Received second START_ORD as part of normal start
+2018-05-30 05:31:02 [ndbd] INFO     -- Disconnect all non-MGM servers
+2018-05-30 05:31:02 [ndbd] INFO     -- Start excuting the start phases
+2018-05-30 05:31:02 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 0, name = CMVMI
+2018-05-30 05:31:02 [ndbd] INFO     -- Start initiated (mysql-5.7.17 ndb-7.5.5)
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 4, id = 4331, type = NdbfsThread
+2018-05-30 05:31:02 [ndbd] INFO     -- Touch Memory Starting, 23368 pages, page size = 32768
+2018-05-30 05:31:03 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 05:31:03 [ndbd] INFO     -- Adding 731Mb to ZONE_LO (1152,23368)
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 1, name = NDBFS
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 5, id = 4340, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 6, id = 4341, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 7, id = 4342, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 8, id = 4343, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 9, id = 4344, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 10, id = 4345, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 11, id = 4346, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 12, id = 4347, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 13, id = 4348, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 14, id = 4349, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 15, id = 4350, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 16, id = 4351, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 17, id = 4352, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 18, id = 4353, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 19, id = 4354, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 20, id = 4355, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 21, id = 4356, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 22, id = 4357, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 23, id = 4358, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 24, id = 4359, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 25, id = 4360, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 26, id = 4361, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 27, id = 4362, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 28, id = 4363, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 29, id = 4364, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 30, id = 4365, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 31, id = 4366, type = NdbfsThread
+Started thread, index = 32, id = 4367, type = NdbfsThread
+Started thread, index = 33, id = 4368, type = NdbfsThread
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 2, name = DBINFO
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 3, name = DBTUP
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 4, name = DBACC
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 5, name = DBTC
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 6, name = DBLQH
+LCPFragWatchdog : WarnElapsed : 20000(ms) MaxElapsed 60000(ms) : period millis : 10000
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 7, name = DBTUX
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 8, name = DBDICT
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 9, name = DBDIH
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 10, name = NDBCNTR
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 11, name = QMGR
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 12, name = TRIX
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 13, name = BACKUP
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 14, name = DBUTIL
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 15, name = SUMA
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 16, name = TSMAN
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 17, name = LGMAN
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 18, name = PGMAN
+pgman: page buffer entries = 10
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 19, name = RESTORE
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 20, name = DBSPJ
+2018-05-30 05:31:03 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 21, name = THRMAN
+2018-05-30 05:31:03 [ndbd] INFO     -- READ_CONFIG_REQ phase completed, this phase is used to read configuration and to calculate various sizes and allocate almost all memory needed by the data node in its lifetime
+2018-05-30 05:31:03 [ndbd] INFO     -- Start phase 0 completed
+2018-05-30 05:31:03 [ndbd] INFO     -- Phase 0 has made some file system initialisations
+2018-05-30 05:31:03 [ndbd] INFO     -- Starting QMGR phase 1
+2018-05-30 05:31:03 [ndbd] INFO     -- DIH reported initial start, now starting the Node Inclusion Protocol
+2018-05-30 05:39:03 [ndbd] INFO     -- The data node run-time environment has been stopped
+2018-05-30 05:39:03 [ndbd] INFO     -- Shutdown initiated
+2018-05-30 05:39:03 [ndbd] INFO     -- Shutdown completed - exiting
+2018-05-30 05:39:03 [ndbd] INFO     -- Angel shutting down
+2018-05-30 05:39:03 [ndbd] INFO     -- Node 2: Node shutdown completed.
+2018-05-30 05:39:38 [ndbd] INFO     -- Angel pid: 4831 started child: 4832
+2018-05-30 05:39:38 [ndbd] INFO     -- Normal start of data node using checkpoint and log info if existing
+2018-05-30 05:39:38 [ndbd] INFO     -- Configuration fetched from '10.1.138.116:1186', generation: 1
+2018-05-30 05:39:38 [ndbd] INFO     -- Changing directory to '/var/lib/mysql-cluster'
+2018-05-30 05:39:38 [ndbd] INFO     -- MaxNoOfTriggers set to 1400
+NDBMT: non-mt
+2018-05-30 05:39:38 [ndbd] INFO     -- NDB Cluster -- DB node 2
+2018-05-30 05:39:38 [ndbd] INFO     -- mysql-5.7.17 ndb-7.5.5 --
+2018-05-30 05:39:38 [ndbd] INFO     -- Memory Allocation for global memory pools Starting
+2018-05-30 05:39:38 [ndbd] INFO     -- numa_set_interleave_mask(numa_all_nodes) : OK
+2018-05-30 05:39:38 [ndbd] INFO     -- Ndbd_mem_manager::init(1) min: 638Mb initial: 766Mb
+2018-05-30 05:39:38 [ndbd] INFO     -- Touch Memory Starting, 1152 pages, page size = 32768
+2018-05-30 05:39:38 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 05:39:38 [ndbd] INFO     -- Adding 36Mb to ZONE_LO (1,1151)
+2018-05-30 05:39:38 [ndbd] INFO     -- Memory Allocation for global memory pools Completed
+2018-05-30 05:39:38 [ndbd] INFO     -- Loading blocks for data node run-time environment
+2018-05-30 05:39:38 [ndbd] INFO     -- Starting Sending and Receiving services
+Started thread, index = 0, id = 4834, type = SocketClientThread
+Started thread, index = 1, id = 4833, type = WatchDogThread
+Started thread, index = 2, id = 4835, type = SocketServerThread
+2018-05-30 05:39:38 [ndbd] INFO     -- Starting the data node run-time environment
+2018-05-30 05:39:38 [ndbd] INFO     -- First START_ORD executed to connect MGM servers
+2018-05-30 05:39:38 [ndbd] INFO     -- Received second START_ORD as part of normal start
+2018-05-30 05:39:38 [ndbd] INFO     -- Disconnect all non-MGM servers
+2018-05-30 05:39:38 [ndbd] INFO     -- Start excuting the start phases
+2018-05-30 05:39:38 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 0, name = CMVMI
+2018-05-30 05:39:38 [ndbd] INFO     -- Start initiated (mysql-5.7.17 ndb-7.5.5)
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 4, id = 4836, type = NdbfsThread
+2018-05-30 05:39:38 [ndbd] INFO     -- Touch Memory Starting, 23368 pages, page size = 32768
+2018-05-30 05:39:39 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 05:39:39 [ndbd] INFO     -- Adding 731Mb to ZONE_LO (1152,23368)
+2018-05-30 05:39:39 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 1, name = NDBFS
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 5, id = 4845, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 6, id = 4846, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 7, id = 4847, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 8, id = 4848, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 9, id = 4849, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 10, id = 4850, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 11, id = 4851, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 12, id = 4852, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 13, id = 4853, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 14, id = 4854, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 15, id = 4855, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 16, id = 4856, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 17, id = 4857, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 18, id = 4858, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 19, id = 4859, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 20, id = 4860, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 21, id = 4861, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 22, id = 4862, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 23, id = 4863, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 24, id = 4864, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 25, id = 4865, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 26, id = 4866, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 27, id = 4867, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 28, id = 4868, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 29, id = 4869, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 30, id = 4870, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 31, id = 4871, type = NdbfsThread
+Started thread, index = 32, id = 4872, type = NdbfsThread
+Started thread, index = 33, id = 4873, type = NdbfsThread
+2018-05-30 05:39:39 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 2, name = DBINFO
+2018-05-30 05:39:39 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 3, name = DBTUP
+2018-05-30 05:39:39 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 4, name = DBACC
+2018-05-30 05:39:39 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 5, name = DBTC
+2018-05-30 05:39:39 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 6, name = DBLQH
+LCPFragWatchdog : WarnElapsed : 20000(ms) MaxElapsed 60000(ms) : period millis : 10000
+2018-05-30 05:39:39 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 7, name = DBTUX
+2018-05-30 05:39:39 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 8, name = DBDICT
+2018-05-30 05:39:39 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 9, name = DBDIH
+2018-05-30 05:39:39 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 10, name = NDBCNTR
+2018-05-30 05:39:39 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 11, name = QMGR
+2018-05-30 05:39:39 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 12, name = TRIX
+2018-05-30 05:39:39 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 13, name = BACKUP
+2018-05-30 05:39:40 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 14, name = DBUTIL
+2018-05-30 05:39:40 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 15, name = SUMA
+2018-05-30 05:39:40 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 16, name = TSMAN
+2018-05-30 05:39:40 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 17, name = LGMAN
+2018-05-30 05:39:40 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 18, name = PGMAN
+pgman: page buffer entries = 10
+2018-05-30 05:39:40 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 19, name = RESTORE
+2018-05-30 05:39:40 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 20, name = DBSPJ
+2018-05-30 05:39:40 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 21, name = THRMAN
+2018-05-30 05:39:40 [ndbd] INFO     -- READ_CONFIG_REQ phase completed, this phase is used to read configuration and to calculate various sizes and allocate almost all memory needed by the data node in its lifetime
+2018-05-30 05:39:40 [ndbd] INFO     -- Start phase 0 completed
+2018-05-30 05:39:40 [ndbd] INFO     -- Phase 0 has made some file system initialisations
+2018-05-30 05:39:40 [ndbd] INFO     -- Starting QMGR phase 1
+2018-05-30 05:39:40 [ndbd] INFO     -- DIH reported initial start, now starting the Node Inclusion Protocol
+2018-05-30 05:41:22 [ndbd] INFO     -- The data node run-time environment has been stopped
+2018-05-30 05:41:22 [ndbd] INFO     -- Shutdown initiated
+2018-05-30 05:41:22 [ndbd] INFO     -- Shutdown completed - exiting
+2018-05-30 05:41:22 [ndbd] INFO     -- Angel shutting down
+2018-05-30 05:41:22 [ndbd] INFO     -- Node 2: Node shutdown completed.
+2018-05-30 05:41:53 [ndbd] INFO     -- Angel pid: 4954 started child: 4955
+2018-05-30 05:41:53 [ndbd] INFO     -- Normal start of data node using checkpoint and log info if existing
+2018-05-30 05:41:53 [ndbd] INFO     -- Configuration fetched from '10.1.138.116:1186', generation: 1
+2018-05-30 05:41:53 [ndbd] INFO     -- Changing directory to '/var/lib/mysql-cluster'
+2018-05-30 05:41:53 [ndbd] INFO     -- MaxNoOfTriggers set to 1400
+NDBMT: non-mt
+2018-05-30 05:41:53 [ndbd] INFO     -- NDB Cluster -- DB node 2
+2018-05-30 05:41:53 [ndbd] INFO     -- mysql-5.7.17 ndb-7.5.5 --
+2018-05-30 05:41:53 [ndbd] INFO     -- Memory Allocation for global memory pools Starting
+2018-05-30 05:41:53 [ndbd] INFO     -- numa_set_interleave_mask(numa_all_nodes) : OK
+2018-05-30 05:41:53 [ndbd] INFO     -- Ndbd_mem_manager::init(1) min: 638Mb initial: 766Mb
+2018-05-30 05:41:53 [ndbd] INFO     -- Touch Memory Starting, 1152 pages, page size = 32768
+2018-05-30 05:41:53 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 05:41:53 [ndbd] INFO     -- Adding 36Mb to ZONE_LO (1,1151)
+2018-05-30 05:41:53 [ndbd] INFO     -- Memory Allocation for global memory pools Completed
+2018-05-30 05:41:53 [ndbd] INFO     -- Loading blocks for data node run-time environment
+2018-05-30 05:41:53 [ndbd] INFO     -- Starting Sending and Receiving services
+Started thread, index = 0, id = 4957, type = SocketClientThread
+Started thread, index = 1, id = 4956, type = WatchDogThread
+Started thread, index = 2, id = 4958, type = SocketServerThread
+2018-05-30 05:41:53 [ndbd] INFO     -- Starting the data node run-time environment
+2018-05-30 05:41:53 [ndbd] INFO     -- First START_ORD executed to connect MGM servers
+2018-05-30 05:41:53 [ndbd] INFO     -- Received second START_ORD as part of normal start
+2018-05-30 05:41:53 [ndbd] INFO     -- Disconnect all non-MGM servers
+2018-05-30 05:41:53 [ndbd] INFO     -- Start excuting the start phases
+2018-05-30 05:41:53 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 0, name = CMVMI
+2018-05-30 05:41:53 [ndbd] INFO     -- Start initiated (mysql-5.7.17 ndb-7.5.5)
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 4, id = 4959, type = NdbfsThread
+2018-05-30 05:41:53 [ndbd] INFO     -- Touch Memory Starting, 23368 pages, page size = 32768
+2018-05-30 05:41:54 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 05:41:54 [ndbd] INFO     -- Adding 731Mb to ZONE_LO (1152,23368)
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 1, name = NDBFS
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 5, id = 4968, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 6, id = 4969, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 7, id = 4970, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 8, id = 4971, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 9, id = 4972, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 10, id = 4973, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 11, id = 4974, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 12, id = 4975, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 13, id = 4976, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 14, id = 4977, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 15, id = 4978, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 16, id = 4979, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 17, id = 4980, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 18, id = 4981, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 19, id = 4982, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 20, id = 4983, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 21, id = 4984, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 22, id = 4985, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 23, id = 4986, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 24, id = 4987, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 25, id = 4988, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 26, id = 4989, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 27, id = 4990, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 28, id = 4991, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 29, id = 4992, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 30, id = 4993, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 31, id = 4994, type = NdbfsThread
+Started thread, index = 32, id = 4995, type = NdbfsThread
+Started thread, index = 33, id = 4996, type = NdbfsThread
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 2, name = DBINFO
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 3, name = DBTUP
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 4, name = DBACC
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 5, name = DBTC
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 6, name = DBLQH
+LCPFragWatchdog : WarnElapsed : 20000(ms) MaxElapsed 60000(ms) : period millis : 10000
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 7, name = DBTUX
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 8, name = DBDICT
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 9, name = DBDIH
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 10, name = NDBCNTR
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 11, name = QMGR
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 12, name = TRIX
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 13, name = BACKUP
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 14, name = DBUTIL
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 15, name = SUMA
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 16, name = TSMAN
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 17, name = LGMAN
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 18, name = PGMAN
+pgman: page buffer entries = 10
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 19, name = RESTORE
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 20, name = DBSPJ
+2018-05-30 05:41:54 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 21, name = THRMAN
+2018-05-30 05:41:54 [ndbd] INFO     -- READ_CONFIG_REQ phase completed, this phase is used to read configuration and to calculate various sizes and allocate almost all memory needed by the data node in its lifetime
+2018-05-30 05:41:54 [ndbd] INFO     -- Start phase 0 completed
+2018-05-30 05:41:54 [ndbd] INFO     -- Phase 0 has made some file system initialisations
+2018-05-30 05:41:54 [ndbd] INFO     -- Starting QMGR phase 1
+2018-05-30 05:41:54 [ndbd] INFO     -- DIH reported initial start, now starting the Node Inclusion Protocol
+2018-05-30 05:58:44 [ndbd] INFO     -- The data node run-time environment has been stopped
+2018-05-30 05:58:44 [ndbd] INFO     -- Shutdown initiated
+2018-05-30 05:58:44 [ndbd] INFO     -- Shutdown completed - exiting
+2018-05-30 05:58:44 [ndbd] INFO     -- Angel shutting down
+2018-05-30 05:58:44 [ndbd] INFO     -- Node 2: Node shutdown completed.
+2018-05-30 05:58:44 [ndbd] WARNING  -- Unable to report shutdown reason to '10.1.138.116:1186'(error: Could not connect to socket - Unable to connect with connect string: nodeid=0,10.1.138.116:1186)
+2018-05-30 06:18:51 [ndbd] INFO     -- Angel pid: 3683 started child: 3684
+2018-05-30 06:18:51 [ndbd] INFO     -- Normal start of data node using checkpoint and log info if existing
+2018-05-30 06:18:51 [ndbd] INFO     -- Configuration fetched from '10.1.138.116:1186', generation: 1
+2018-05-30 06:18:51 [ndbd] INFO     -- Changing directory to '/var/lib/mysql-cluster'
+2018-05-30 06:18:51 [ndbd] INFO     -- MaxNoOfTriggers set to 1400
+NDBMT: non-mt
+2018-05-30 06:18:51 [ndbd] INFO     -- NDB Cluster -- DB node 2
+2018-05-30 06:18:51 [ndbd] INFO     -- mysql-5.7.17 ndb-7.5.5 --
+2018-05-30 06:18:51 [ndbd] INFO     -- Memory Allocation for global memory pools Starting
+2018-05-30 06:18:51 [ndbd] INFO     -- numa_set_interleave_mask(numa_all_nodes) : OK
+2018-05-30 06:18:51 [ndbd] INFO     -- Ndbd_mem_manager::init(1) min: 638Mb initial: 766Mb
+2018-05-30 06:18:51 [ndbd] INFO     -- Touch Memory Starting, 1152 pages, page size = 32768
+2018-05-30 06:18:51 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 06:18:51 [ndbd] INFO     -- Adding 36Mb to ZONE_LO (1,1151)
+2018-05-30 06:18:51 [ndbd] INFO     -- Memory Allocation for global memory pools Completed
+2018-05-30 06:18:51 [ndbd] INFO     -- Loading blocks for data node run-time environment
+2018-05-30 06:18:51 [ndbd] INFO     -- Starting Sending and Receiving services
+Started thread, index = 0, id = 3686, type = SocketClientThread
+Started thread, index = 1, id = 3685, type = WatchDogThread
+Started thread, index = 2, id = 3687, type = SocketServerThread
+2018-05-30 06:18:51 [ndbd] INFO     -- Starting the data node run-time environment
+2018-05-30 06:18:51 [ndbd] INFO     -- First START_ORD executed to connect MGM servers
+2018-05-30 06:18:51 [ndbd] INFO     -- Received second START_ORD as part of normal start
+2018-05-30 06:18:51 [ndbd] INFO     -- Disconnect all non-MGM servers
+2018-05-30 06:18:51 [ndbd] INFO     -- Start excuting the start phases
+2018-05-30 06:18:51 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 0, name = CMVMI
+2018-05-30 06:18:51 [ndbd] INFO     -- Start initiated (mysql-5.7.17 ndb-7.5.5)
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 4, id = 3688, type = NdbfsThread
+2018-05-30 06:18:51 [ndbd] INFO     -- Touch Memory Starting, 23368 pages, page size = 32768
+2018-05-30 06:18:52 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 06:18:52 [ndbd] INFO     -- Adding 731Mb to ZONE_LO (1152,23368)
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 1, name = NDBFS
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 5, id = 3697, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 6, id = 3698, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 7, id = 3699, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 8, id = 3700, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 9, id = 3701, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 10, id = 3702, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 11, id = 3703, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 12, id = 3704, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 13, id = 3705, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 14, id = 3706, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 15, id = 3707, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 16, id = 3708, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 17, id = 3709, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 18, id = 3710, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 19, id = 3711, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 20, id = 3712, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 21, id = 3713, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 22, id = 3714, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 23, id = 3715, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 24, id = 3716, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 25, id = 3717, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 26, id = 3718, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 27, id = 3719, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 28, id = 3720, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 29, id = 3721, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 30, id = 3722, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 31, id = 3723, type = NdbfsThread
+Started thread, index = 32, id = 3724, type = NdbfsThread
+Started thread, index = 33, id = 3725, type = NdbfsThread
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 2, name = DBINFO
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 3, name = DBTUP
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 4, name = DBACC
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 5, name = DBTC
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 6, name = DBLQH
+LCPFragWatchdog : WarnElapsed : 20000(ms) MaxElapsed 60000(ms) : period millis : 10000
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 7, name = DBTUX
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 8, name = DBDICT
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 9, name = DBDIH
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 10, name = NDBCNTR
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 11, name = QMGR
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 12, name = TRIX
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 13, name = BACKUP
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 14, name = DBUTIL
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 15, name = SUMA
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 16, name = TSMAN
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 17, name = LGMAN
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 18, name = PGMAN
+pgman: page buffer entries = 10
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 19, name = RESTORE
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 20, name = DBSPJ
+2018-05-30 06:18:52 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 21, name = THRMAN
+2018-05-30 06:18:53 [ndbd] INFO     -- READ_CONFIG_REQ phase completed, this phase is used to read configuration and to calculate various sizes and allocate almost all memory needed by the data node in its lifetime
+2018-05-30 06:18:53 [ndbd] INFO     -- Start phase 0 completed
+2018-05-30 06:18:53 [ndbd] INFO     -- Phase 0 has made some file system initialisations
+2018-05-30 06:18:53 [ndbd] INFO     -- Starting QMGR phase 1
+2018-05-30 06:18:53 [ndbd] INFO     -- DIH reported initial start, now starting the Node Inclusion Protocol
+2018-05-30 06:20:11 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501'
+2018-05-30 06:20:14 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 18 times
+2018-05-30 06:20:17 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:20:20 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:20:23 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:20:26 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:20:29 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:20:32 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:20:35 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:20:38 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:20:41 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:20:44 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:20:47 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:20:50 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:20:53 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:20:56 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:20:59 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:02 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:05 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:08 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:11 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:14 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:17 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:20 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:23 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:26 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:29 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:32 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:35 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:38 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:41 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:44 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:47 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:50 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:53 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:56 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:21:59 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:22:02 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:22:05 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:22:08 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:22:11 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:22:14 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:22:17 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:22:20 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:22:23 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:22:26 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:22:29 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:22:32 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 06:22:32 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 3 times
+2018-05-30 06:23:15 [ndbd] INFO     -- The data node run-time environment has been stopped
+2018-05-30 06:23:15 [ndbd] INFO     -- Shutdown initiated
+2018-05-30 06:23:15 [ndbd] INFO     -- Shutdown completed - exiting
+2018-05-30 06:23:15 [ndbd] INFO     -- Angel shutting down
+2018-05-30 06:23:15 [ndbd] INFO     -- Node 2: Node shutdown completed.
+2018-05-30 06:23:17 [ndbd] INFO     -- Angel pid: 3890 started child: 3891
+2018-05-30 06:23:17 [ndbd] INFO     -- Normal start of data node using checkpoint and log info if existing
+2018-05-30 06:23:17 [ndbd] INFO     -- Configuration fetched from '10.1.138.116:1186', generation: 1
+2018-05-30 06:23:17 [ndbd] INFO     -- Changing directory to '/var/lib/mysql-cluster'
+2018-05-30 06:23:17 [ndbd] INFO     -- MaxNoOfTriggers set to 1400
+NDBMT: non-mt
+2018-05-30 06:23:17 [ndbd] INFO     -- NDB Cluster -- DB node 2
+2018-05-30 06:23:17 [ndbd] INFO     -- mysql-5.7.17 ndb-7.5.5 --
+2018-05-30 06:23:17 [ndbd] INFO     -- Memory Allocation for global memory pools Starting
+2018-05-30 06:23:17 [ndbd] INFO     -- numa_set_interleave_mask(numa_all_nodes) : OK
+2018-05-30 06:23:17 [ndbd] INFO     -- Ndbd_mem_manager::init(1) min: 638Mb initial: 766Mb
+2018-05-30 06:23:17 [ndbd] INFO     -- Touch Memory Starting, 1152 pages, page size = 32768
+2018-05-30 06:23:17 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 06:23:17 [ndbd] INFO     -- Adding 36Mb to ZONE_LO (1,1151)
+2018-05-30 06:23:17 [ndbd] INFO     -- Memory Allocation for global memory pools Completed
+2018-05-30 06:23:17 [ndbd] INFO     -- Loading blocks for data node run-time environment
+2018-05-30 06:23:17 [ndbd] INFO     -- Starting Sending and Receiving services
+2018-05-30 06:23:17 [ndbd] ERROR    -- /export/home/pb2/build/sb_0-21745070-1483592666.77/mysql-cluster-gpl-7.5.5/storage/ndb/src/common/transporter/TransporterRegistry.cpp: 2463
+2018-05-30 06:23:17 [ndbd] INFO     -- Failed to convert mgm connection to a transporter
+2018-05-30 06:23:17 [ndbd] INFO     -- /export/home/pb2/build/sb_0-21745070-1483592666.77/mysql-cluster-gpl-7.5.5/storage/ndb/src/kernel/ndbd.cpp
+2018-05-30 06:23:17 [ndbd] INFO     -- Error handler shutting down system
+2018-05-30 06:23:17 [ndbd] INFO     -- Error handler shutdown completed - exiting
+2018-05-30 06:23:17 [ndbd] ALERT    -- Node 2: Forced node shutdown completed. Occured during startphase 0. Caused by error 6054: 'Connection setup failed(Configuration error). Permanent error, external action needed'.
+2018-05-30 06:23:47 [ndbd] WARNING  -- Unable to report shutdown reason to '10.1.138.116:1186'(error: Illegal reply from server - )
+2018-05-30 06:25:20 [ndbd] INFO     -- Angel pid: 3973 started child: 3974
+2018-05-30 06:25:20 [ndbd] INFO     -- Normal start of data node using checkpoint and log info if existing
+2018-05-30 06:25:20 [ndbd] INFO     -- Configuration fetched from '10.1.138.116:1186', generation: 1
+2018-05-30 06:25:20 [ndbd] INFO     -- Changing directory to '/var/lib/mysql-cluster'
+2018-05-30 06:25:20 [ndbd] INFO     -- MaxNoOfTriggers set to 1400
+NDBMT: non-mt
+2018-05-30 06:25:20 [ndbd] INFO     -- NDB Cluster -- DB node 2
+2018-05-30 06:25:20 [ndbd] INFO     -- mysql-5.7.17 ndb-7.5.5 --
+2018-05-30 06:25:20 [ndbd] INFO     -- Memory Allocation for global memory pools Starting
+2018-05-30 06:25:20 [ndbd] INFO     -- numa_set_interleave_mask(numa_all_nodes) : OK
+2018-05-30 06:25:20 [ndbd] INFO     -- Ndbd_mem_manager::init(1) min: 638Mb initial: 766Mb
+2018-05-30 06:25:20 [ndbd] INFO     -- Touch Memory Starting, 1152 pages, page size = 32768
+2018-05-30 06:25:21 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 06:25:21 [ndbd] INFO     -- Adding 36Mb to ZONE_LO (1,1151)
+2018-05-30 06:25:21 [ndbd] INFO     -- Memory Allocation for global memory pools Completed
+2018-05-30 06:25:21 [ndbd] INFO     -- Loading blocks for data node run-time environment
+2018-05-30 06:25:21 [ndbd] INFO     -- Starting Sending and Receiving services
+Started thread, index = 0, id = 3976, type = SocketClientThread
+Started thread, index = 1, id = 3975, type = WatchDogThread
+Started thread, index = 2, id = 3977, type = SocketServerThread
+2018-05-30 06:25:21 [ndbd] INFO     -- Starting the data node run-time environment
+2018-05-30 06:25:21 [ndbd] INFO     -- First START_ORD executed to connect MGM servers
+2018-05-30 06:25:21 [ndbd] INFO     -- Received second START_ORD as part of normal start
+2018-05-30 06:25:21 [ndbd] INFO     -- Disconnect all non-MGM servers
+2018-05-30 06:25:21 [ndbd] INFO     -- Start excuting the start phases
+2018-05-30 06:25:21 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 0, name = CMVMI
+2018-05-30 06:25:21 [ndbd] INFO     -- Start initiated (mysql-5.7.17 ndb-7.5.5)
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 4, id = 3978, type = NdbfsThread
+2018-05-30 06:25:21 [ndbd] INFO     -- Touch Memory Starting, 23368 pages, page size = 32768
+2018-05-30 06:25:22 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 06:25:22 [ndbd] INFO     -- Adding 731Mb to ZONE_LO (1152,23368)
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 1, name = NDBFS
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 5, id = 3987, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 6, id = 3988, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 7, id = 3989, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 8, id = 3990, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 9, id = 3991, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 10, id = 3992, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 11, id = 3993, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 12, id = 3994, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 13, id = 3995, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 14, id = 3996, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 15, id = 3997, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 16, id = 3998, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 17, id = 3999, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 18, id = 4000, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 19, id = 4001, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 20, id = 4002, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 21, id = 4003, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 22, id = 4004, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 23, id = 4005, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 24, id = 4006, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 25, id = 4007, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 26, id = 4008, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 27, id = 4009, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 28, id = 4010, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 29, id = 4011, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 30, id = 4012, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 31, id = 4013, type = NdbfsThread
+Started thread, index = 32, id = 4014, type = NdbfsThread
+Started thread, index = 33, id = 4015, type = NdbfsThread
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 2, name = DBINFO
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 3, name = DBTUP
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 4, name = DBACC
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 5, name = DBTC
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 6, name = DBLQH
+LCPFragWatchdog : WarnElapsed : 20000(ms) MaxElapsed 60000(ms) : period millis : 10000
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 7, name = DBTUX
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 8, name = DBDICT
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 9, name = DBDIH
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 10, name = NDBCNTR
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 11, name = QMGR
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 12, name = TRIX
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 13, name = BACKUP
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 14, name = DBUTIL
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 15, name = SUMA
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 16, name = TSMAN
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 17, name = LGMAN
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 18, name = PGMAN
+pgman: page buffer entries = 10
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 19, name = RESTORE
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 20, name = DBSPJ
+2018-05-30 06:25:22 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 21, name = THRMAN
+2018-05-30 06:25:22 [ndbd] INFO     -- READ_CONFIG_REQ phase completed, this phase is used to read configuration and to calculate various sizes and allocate almost all memory needed by the data node in its lifetime
+2018-05-30 06:25:22 [ndbd] INFO     -- Start phase 0 completed
+2018-05-30 06:25:22 [ndbd] INFO     -- Phase 0 has made some file system initialisations
+2018-05-30 06:25:22 [ndbd] INFO     -- Starting QMGR phase 1
+2018-05-30 06:25:22 [ndbd] INFO     -- DIH reported initial start, now starting the Node Inclusion Protocol
+2018-05-30 06:25:36 [ndbd] INFO     -- The data node run-time environment has been stopped
+2018-05-30 06:25:36 [ndbd] INFO     -- Shutdown initiated
+2018-05-30 06:25:36 [ndbd] INFO     -- Shutdown completed - exiting
+2018-05-30 06:25:36 [ndbd] INFO     -- Angel shutting down
+2018-05-30 06:25:36 [ndbd] INFO     -- Node 2: Node shutdown completed.
+2018-05-30 11:52:27 [ndbd] INFO     -- Angel pid: 16682 started child: 16683
+2018-05-30 11:52:27 [ndbd] INFO     -- Normal start of data node using checkpoint and log info if existing
+2018-05-30 11:52:27 [ndbd] INFO     -- Configuration fetched from '10.1.138.116:1186', generation: 1
+2018-05-30 11:52:27 [ndbd] INFO     -- Changing directory to '/var/lib/mysql-cluster'
+2018-05-30 11:52:27 [ndbd] INFO     -- MaxNoOfTriggers set to 1400
+NDBMT: non-mt
+2018-05-30 11:52:27 [ndbd] INFO     -- NDB Cluster -- DB node 2
+2018-05-30 11:52:27 [ndbd] INFO     -- mysql-5.7.17 ndb-7.5.5 --
+2018-05-30 11:52:27 [ndbd] INFO     -- Memory Allocation for global memory pools Starting
+2018-05-30 11:52:27 [ndbd] INFO     -- numa_set_interleave_mask(numa_all_nodes) : OK
+2018-05-30 11:52:27 [ndbd] INFO     -- Ndbd_mem_manager::init(1) min: 638Mb initial: 766Mb
+2018-05-30 11:52:27 [ndbd] INFO     -- Touch Memory Starting, 1152 pages, page size = 32768
+2018-05-30 11:52:27 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 11:52:27 [ndbd] INFO     -- Adding 36Mb to ZONE_LO (1,1151)
+2018-05-30 11:52:27 [ndbd] INFO     -- Memory Allocation for global memory pools Completed
+2018-05-30 11:52:27 [ndbd] INFO     -- Loading blocks for data node run-time environment
+2018-05-30 11:52:27 [ndbd] INFO     -- Starting Sending and Receiving services
+Started thread, index = 0, id = 16685, type = SocketClientThread
+Started thread, index = 1, id = 16684, type = WatchDogThread
+Started thread, index = 2, id = 16686, type = SocketServerThread
+2018-05-30 11:52:27 [ndbd] INFO     -- Starting the data node run-time environment
+2018-05-30 11:52:27 [ndbd] INFO     -- First START_ORD executed to connect MGM servers
+2018-05-30 11:52:27 [ndbd] INFO     -- Received second START_ORD as part of normal start
+2018-05-30 11:52:27 [ndbd] INFO     -- Disconnect all non-MGM servers
+2018-05-30 11:52:27 [ndbd] INFO     -- Start excuting the start phases
+2018-05-30 11:52:27 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 0, name = CMVMI
+2018-05-30 11:52:27 [ndbd] INFO     -- Start initiated (mysql-5.7.17 ndb-7.5.5)
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 4, id = 16687, type = NdbfsThread
+2018-05-30 11:52:27 [ndbd] INFO     -- Touch Memory Starting, 23368 pages, page size = 32768
+2018-05-30 11:52:28 [ndbd] INFO     -- Touch Memory Completed
+2018-05-30 11:52:28 [ndbd] INFO     -- Adding 731Mb to ZONE_LO (1152,23368)
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 1, name = NDBFS
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 5, id = 16696, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 6, id = 16697, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 7, id = 16698, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 8, id = 16699, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 9, id = 16700, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 10, id = 16701, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 11, id = 16702, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 12, id = 16703, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 13, id = 16704, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 14, id = 16705, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 15, id = 16706, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 16, id = 16707, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 17, id = 16708, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 18, id = 16709, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 19, id = 16710, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 20, id = 16711, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 21, id = 16712, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 22, id = 16713, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 23, id = 16714, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 24, id = 16715, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 25, id = 16716, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 26, id = 16717, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 27, id = 16718, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 28, id = 16719, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 29, id = 16720, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 30, id = 16721, type = NdbfsThread
+NDBFS/AsyncFile: Allocating 310392 for In/Deflate buffer
+Started thread, index = 31, id = 16722, type = NdbfsThread
+Started thread, index = 32, id = 16723, type = NdbfsThread
+Started thread, index = 33, id = 16724, type = NdbfsThread
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 2, name = DBINFO
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 3, name = DBTUP
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 4, name = DBACC
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 5, name = DBTC
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 6, name = DBLQH
+LCPFragWatchdog : WarnElapsed : 20000(ms) MaxElapsed 60000(ms) : period millis : 10000
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 7, name = DBTUX
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 8, name = DBDICT
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 9, name = DBDIH
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 10, name = NDBCNTR
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 11, name = QMGR
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 12, name = TRIX
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 13, name = BACKUP
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 14, name = DBUTIL
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 15, name = SUMA
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 16, name = TSMAN
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 17, name = LGMAN
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 18, name = PGMAN
+pgman: page buffer entries = 10
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 19, name = RESTORE
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 20, name = DBSPJ
+2018-05-30 11:52:28 [ndbd] INFO     -- Sending READ_CONFIG_REQ to index = 21, name = THRMAN
+2018-05-30 11:52:28 [ndbd] INFO     -- READ_CONFIG_REQ phase completed, this phase is used to read configuration and to calculate various sizes and allocate almost all memory needed by the data node in its lifetime
+2018-05-30 11:52:28 [ndbd] INFO     -- Start phase 0 completed
+2018-05-30 11:52:28 [ndbd] INFO     -- Phase 0 has made some file system initialisations
+2018-05-30 11:52:28 [ndbd] INFO     -- Starting QMGR phase 1
+2018-05-30 11:52:28 [ndbd] INFO     -- DIH reported initial start, now starting the Node Inclusion Protocol
+2018-05-30 12:37:09 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501'
+2018-05-30 12:37:12 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:37:15 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:37:18 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:37:21 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:37:24 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:37:27 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:37:30 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 21 times
+2018-05-30 12:37:33 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:37:36 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:37:39 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:37:42 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:37:45 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:37:48 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:37:51 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:37:54 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:37:57 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:38:00 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:38:03 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:38:06 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:38:09 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:38:12 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:38:15 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:38:18 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:38:21 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:38:24 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:38:27 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:38:30 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:38:32 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 15 times
+2018-05-30 12:38:36 [ndbd] ERROR    -- Failed to register dynamic ports, error: 1006  - ''
+2018-05-30 12:38:47 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501'
+2018-05-30 12:38:50 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 19 times
+2018-05-30 12:38:53 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:38:56 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:38:59 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 21 times
+2018-05-30 12:39:02 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:05 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:08 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:11 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:14 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:17 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:20 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:23 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:26 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:29 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:32 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:35 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:38 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:41 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:44 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:47 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:50 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:53 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:56 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:39:59 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:02 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:05 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:08 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:11 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:14 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:17 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:20 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:23 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:26 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:29 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:32 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 21 times
+2018-05-30 12:40:35 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:38 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:41 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:44 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:47 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:50 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:53 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:56 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:40:59 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:02 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:05 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:08 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:11 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:14 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:17 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:20 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:23 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:26 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:29 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:32 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:35 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:38 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:41 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:44 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:47 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:50 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:53 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:56 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:41:59 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:42:02 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:42:05 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:42:08 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:42:11 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:42:14 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:42:17 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:42:20 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:42:23 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:42:26 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:42:29 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:42:32 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:42:35 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:42:38 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 21 times
+2018-05-30 12:42:41 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times
+2018-05-30 12:42:44 [ndbd] ERROR    -- Failed to register dynamic ports, error: 5001  - 'Server port for 2 -> 3 is not marked as dynamic, value: 50501' - Repeated 20 times

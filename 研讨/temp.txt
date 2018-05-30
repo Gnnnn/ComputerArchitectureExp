@@ -1,0 +1,212 @@
+wget http://mirrors.sohu.com/mysql/MySQL-Cluster-7.5/mysql-cluster-gpl-7.5.5-linux-glibc2.5-x86_64.tar.gz
+cd usr/local
+
+tar xvf mysql-cluster-gpl-7.5.5-linux-glibc2.5-x86_64.tar.gz
+cd mysql-cluster-gpl-7.5.5-linux-glibc2.5-x86_64
+cp bin/ndb_mgm* /usr/local/bin
+cd /usr/local/bin
+chmod +x ndb_mgm*
+
+
+mkdir /var/lib/mysql-cluster
+mkdir /usr/local/mysql
+vi /var/lib/mysql-cluster/config.ini
+[ndbd default]
+NoOfReplicas=2
+DataMemory=512M
+IndexMemory=18M
+
+[ndb_mgmd]
+HostName=192.168.75.129
+DataDir=/var/lib/mysql-cluster
+
+[ndbd]
+HostName=192.168.75.128
+DataDir=/var/lib/mysql-cluster
+
+[mysqld]
+[mysqld
+
+/usr/local/bin/ndb_mgmd -f /var/lib/mysql-cluster/config.ini --initial
+
+ln -sv /usr/local/mysql-cluster-gpl-7.5.5-linux-glibc2.5-x86_64 /usr/local/mysql
+
+
+eK.XqbkNa2Y(
+2018-05-29T11:36:17.960434Z 1 [Note] A temporary password is generated for root@localhost: eK.XqbkNa2Y(
+
+
+[ndbd default]
+# Options affecting ndbd processes on all data nodes:
+NoOfReplicas=1    # Number of replicas
+DataMemory=512M    # How much memory to allocate for data storage
+IndexMemory=18M   # How much memory to allocate for index storage
+                  # For DataMemory and IndexMemory, we have used the
+                  # default values. Since the "world" database takes up
+                  # only about 500KB, this should be more than enough for
+                  # this example NDB Cluster setup.
+ServerPort=2202   # This the default value; however, you can use any
+                  # port that is free for all the hosts in the cluster
+                  # Note1: It is recommended that you do not specify the port
+                  # number at all and simply allow the default value to be used
+                  # instead
+                  # Note2: The port was formerly specified using the PortNumber 
+                  # TCP parameter; this parameter is no longer available in NDB
+                  # Cluster 7.5.
+
+[ndb_mgmd]
+# Management process options:
+HostName=10.1.138.116           # Hostname or IP address of MGM node
+DataDir=/var/lib/mysql-cluster  # Directory for MGM node log files
+
+[ndbd]
+# Options for data node "A":
+                                # (one [ndbd] section per data node)
+HostName=10.1.138.97            # Hostname or IP address
+NodeId=2                        # Node ID for this data node
+DataDir=/usr/local/mysql/data   # Directory for this data node's data files
+
+
+[mysqld]
+# SQL node options:
+HostName=10.1.138.97            # Hostname or IP address
+                                # (additional mysqld connections can be
+                                # specified for this node for various
+                                # purposes such as running ndb_restore)
+
+
+
+[mysqld]
+ndbcluster
+ndb-connectstring=10.1.138.116
+
+[mysql_cluster]
+ndb-connectstring=10.1.138.116
+
+
+
+mysqld 每initialize 每user=mysql 每basedir=/usr/local/mysql 每datadir=/home/mysql
+
+
+
+[mysqld]
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+user=mysql
+# Disabling symbolic-links is recommended to prevent assorted security risks
+symbolic-links=0
+ndbcluster
+ndb-connectstring=10.1.138.116
+
+ 
+
+[MYSQL_CLUSTER]
+ndb-connectstring=10.1.138.116
+
+[mysqld_safe]
+log-error=/var/log/mysqld.log
+pid-file=/var/run/mysqld/mysqld.pid
+
+
+cmake . -DBUILD_CONFIG=mysql_release -DCMAKE_INSTALL_PREFIX=/usr/local/mysql-cluster-gpl-7.5.5-linux-glibc2.5-x86_64 -DWITH_NDB_TEST=ON -DWITH_BUNDLED_LIBEVENT=ON -DWITH_BUNDLED_MEMCACHED=ON -DWITH_NDBMTD=ON -DWITH_NDB_TEST=ON
+
+
+./configure --with-mysql-includes=/usr/local/mysql-cluster-gpl-7.5.5-linux-glibc2.5-x86_64/include/ --with-mysql-libs=/usr/local/mysql-cluster-gpl-7.5.5-linux-glibc2.5-x86_64/lib/
+
+export LD_LIBRARY_PATH=/usr/local/mysql/lib/
+
+
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'test' WITH GRANT OPTION;
+
+export LD_LIBRARY_PATH=/usr/local/mysql-cluster-gpl-7.5.5-linux-glibc2.5-x86_64/lib
+
+
+echo "export PATH=$PATH:/usr/local/sysbench-1.0/bin/">>/etc/profile 
+source /etc/profile
+
+[ndbd]
+HostName=10.1.138.150
+NodeId=3
+DataDir=/var/lib/mysql-cluster/
+
+[mysqld]
+HostName=10.1.138.150
+
+
+./autogen.sh
+./configure --with-mysql-includes=/usr/local/mysql-cluster-gpl-7.5.5-linux-glibc2.5-x86_64/include/ --with-mysql-libs=/usr/local/mysql-cluster-gpl-7.5.5-linux-glibc2.5-x86_64/lib/
+
+sysbench --test=oltp --oltp_tables_count=10 --oltp-table-size=100000 --mysql-user=root --mysql-password=test --num-threads=20 --max-time=120 --max-requests=0 --oltp-test-mode=complex prepare
+
+
+bin/mysqld --user=mysql --basedir=/usr/local/mysql-cluster-gpl-7.5.5-linux-glibc2.5-x86_64 --datadir=/usr/local/mysql-cluster-gpl-7.5.5-linux-glibc2.5-x86_64//data/  --initialize
+systemctl status firewalld 
+firewall-cmd --zone=public --add-port=3306/tcp --permanent 
+firewall-cmd --zone=public --add-port=1186/tcp --permanent 
+firewall-cmd --zone=public --add-port=50501/tcp --permanent 
+firewall-cmd --zone=public --add-port=50502/tcp --permanent 
+
+vim /etc/selinux/config 党蜊鍔SELINUX=disabled
+
+
+ps -A|grep mysql
+ps -ef | grep mysql
+
+sysbench ./src/lua/oltp_read_write.lua --mysql-host=10.1.138.97 --mysql-port=3306 --mysql-db=XIAOXIAOKETEST --mysql-user=root --mysql-password=test --table_size=200000000 --tables=1 --threads=500 --events=500000 --report-interval=10 --time=0prepare
+sysbench ./src/lua/oltp_read_write.lua --mysql-host=10.1.138.97 --mysql-port=3306 --mysql-db=XIAOXIAOKETEST --mysql-user=root --mysql-password=test --table_size=200000000 --tables=1 --threads=500 --events=500000 --report-interval=10 --time=0prepare
+
+SET PASSWORD = PASSWORD('123456'); 
+
+sysbench ./tests/include/oltp_legacy/oltp.lua --debug --mysql-host=10.1.138.97 --mysql-port=3306 --mysql-user=root --mysql-password=test --oltp-test-mode=complex --oltp-tables-count=10 --oltp-table-size=1000 --threads=10 --time=120 --report-interval=10 prepare
+
+sysbench oltp_read_write.lua --mysql-host=127.0.0.1 --mysql-port=3306 --mysql-db=sbtest --mysql-user=root --mysql-password=123456 --table_size=200000000 --tables=1 --threads=500 --events=500000 --report-interval=10 --time=0
+
+
+
+
+
+create table mingxing(name char(3))engine=ndb;  
+
+SET PASSWORD = PASSWORD('test');
+grant all privileges on *.* to root@'%' identified by 'test';
+
+
+[ndbd default]
+NoOfReplicas=2
+DataMemory=512M
+IndexMemory=18M
+
+[ndb_mgmd]
+HostName=10.1.138.116
+DataDir=/var/lib/mysql-cluster
+
+[ndbd]
+HostName=10.1.138.97
+DataDir=/var/lib/mysql-cluster
+
+[ndbd]
+HostName=10.1.138.150
+DataDir=/var/lib/mysql-cluster
+
+[mysqld]
+[mysqld]
+
+
+sysbench --test=oltp --mysql-table-engine=innodb --mysql-host=10.1.138.97 --mysql-db=XIAOXIAOKETEST --oltp-table-size=500000 --mysql-user=root --mysql-password=test prepare
+
+sysbench --num-threads=16 --test=oltp --mysql-table-engine=innodb --mysql-host=10.1.138.97 --mysql-db=XIAOXIAOKETEST --oltp-table-size=500000 --mysql-user=root --mysql-password=test run
+
+sysbench --num-threads=16 --test=oltp --mysql-table-engine=innodb --mysql-host=10.1.138.97 --mysql-db=XIAOXIAOKETEST --oltp-table-size=500000 --mysql-user=root --mysql-password=test cleanup
+
+
+sysbench --test=oltp --mysql-table-engine=ndbcluster --mysql-host=10.1.138.97 --mysql-db=XIAOXIAOKETEST --oltp-table-size=500000 --mysql-user=root --mysql-password=test prepare
+sysbench --test=oltp --mysql-table-engine=ndbcluster --mysql-host=10.1.138.97 --mysql-db=XIAOXIAOKETEST --oltp-table-size=500000 --mysql-user=root --mysql-password=test run
+sysbench --test=oltp --mysql-table-engine=ndbcluster --mysql-host=10.1.138.97 --mysql-db=XIAOXIAOKETEST --oltp-table-size=500000 --mysql-user=root --mysql-password=test cleanup
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+Current byte-offset of file-pointer is: 1067                      
+
+
+Time: Wednesday 30 May 2018 - 06:23:17
+Status: Permanent error, external action needed
+Message: Connection setup failed (Configuration error)
+Error: 6054
+Error data: Failed to convert mgm connection to a transporter
+Error object: /export/home/pb2/build/sb_0-21745070-1483592666.77/mysql-cluster-gpl-7.5.5/storage/ndb/src/kernel/ndbd.cpp
+Program: ndbd
+Pid: 3891
+Version: mysql-5.7.17 ndb-7.5.5
+Trace file name: ndb_2_trace.log.1
+Trace file path: /var/lib/mysql-cluster/ndb_2_trace.log.1 [t1..t1]
+***EOM***
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

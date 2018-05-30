@@ -1,0 +1,41 @@
+systemctl status firewalld
+
+管理节点116
+vi /var/lib/mysql-cluster/config.ini
+/usr/local/bin/ndb_mgmd -f /var/lib/mysql-cluster/config.ini --initial
+/usr/local/bin/ndb_mgm
+show
+exit
+/usr/local/bin/ndb_mgm -e shutdown
+
+
+数据节id=2 97
+/etc/init.d/mysql.server restart
+/usr/local/mysql/bin//mysql -uroot -p
+show engines;
+use XIAOXIAOKETEST
+select * from XIAOXIAOKE_TEST_TABLE
+/usr/local/mysql/bin/ndbd
+
+
+数据节点id=3 150
+/etc/init.d/mysql.server restart
+/usr/local/mysql/bin//mysql -uroot -p
+use XIAOXIAOKETEST
+select * from XIAOXIAOKE_TEST_TABLE
+/usr/local/mysql/bin/ndbd
+
+
+测试节点120
+sysbench --test=oltp --mysql-table-engine=innodb --mysql-host=10.1.138.97 --mysql-db=XIAOXIAOKETEST --oltp-table-size=500000 --mysql-user=root --mysql-password=test prepare
+
+sysbench --num-threads=16 --test=oltp --mysql-table-engine=innodb --mysql-host=10.1.138.97 --mysql-db=XIAOXIAOKETEST --oltp-table-size=500000 --mysql-user=root --mysql-password=test run
+
+sysbench --num-threads=16 --test=oltp --mysql-table-engine=innodb --mysql-host=10.1.138.97 --mysql-db=XIAOXIAOKETEST --oltp-table-size=500000 --mysql-user=root --mysql-password=test cleanup
+
+
+sysbench --test=oltp --mysql-table-engine=ndbcluster --mysql-host=10.1.138.97 --mysql-db=XIAOXIAOKETEST --oltp-table-size=500000 --mysql-user=root --mysql-password=test prepare
+
+sysbench --test=oltp --mysql-table-engine=ndbcluster --mysql-host=10.1.138.97 --mysql-db=XIAOXIAOKETEST --oltp-table-size=500000 --mysql-user=root --mysql-password=test run
+
+sysbench --test=oltp --mysql-table-engine=ndbcluster --mysql-host=10.1.138.97 --mysql-db=XIAOXIAOKETEST --oltp-table-size=500000 --mysql-user=root --mysql-password=test cleanu
